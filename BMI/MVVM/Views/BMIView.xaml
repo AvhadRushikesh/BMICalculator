@@ -86,6 +86,107 @@
             </Frame>
             <!--#endregion-->
 
+            <!--#region Result -->
+            <Frame>
+                <VerticalStackLayout>
+                    <Label FontSize="Title"
+                           HorizontalOptions="Center"
+                           Text="Result: Normal"/>
+                    <gauge:SfRadialGauge Margin="0,-55,0,-55">
+                        <gauge:SfRadialGauge.Axes>
+                            <gauge:RadialAxis
+                                Maximum="50"
+                                Minimum="0"
+                                ShowAxisLine="False"
+                                ShowLabels="False"
+                                ShowTicks="False">
+                                <gauge:RadialAxis.Ranges>
+                                    <gauge:RadialRange
+                                        StartValue="0"
+                                        StartWidth="0.65"
+                                        Fill="#282E5A"
+                                        WidthUnit="Factor"
+                                        EndWidth="0.65"
+                                        EndValue="16"
+                                        />
+                                    <gauge:RadialRange
+                                        StartValue="16"
+                                        StartWidth="0.65"
+                                        Fill="blue"
+                                        WidthUnit="Factor"
+                                        EndWidth="0.65"
+                                        EndValue="18.5"
+                                        />
+                                    <gauge:RadialRange
+                                        StartValue="18.5"
+                                        StartWidth="0.65"
+                                        Fill="#A9DF51"
+                                        WidthUnit="Factor"
+                                        EndWidth="0.65"
+                                        EndValue="25"
+                                        />
+                                    <gauge:RadialRange
+                                        StartValue="25"
+                                        StartWidth="0.65"
+                                        EndWidth="0.65"
+                                        Fill="#F68F30"
+                                        EndValue="30"
+                                        WidthUnit="Factor"
+                                        />
+                                    <gauge:RadialRange
+                                        StartValue="30"
+                                        StartWidth="0.65"
+                                        Fill="#D35E58"
+                                        WidthUnit="Factor"
+                                        EndWidth="0.65"
+                                        EndValue="35"
+                                        />
+                                    <gauge:RadialRange
+                                        StartValue="35"
+                                        StartWidth="0.65"
+                                        Fill="Red"
+                                        WidthUnit="Factor"
+                                        EndWidth="0.65"
+                                        EndValue="40"
+                                        />
+                                    <gauge:RadialRange
+                                        StartValue="40"
+                                        StartWidth="0.65"
+                                        Fill="#690b08"
+                                        WidthUnit="Factor"
+                                        EndWidth="0.65"
+                                        EndValue="50"
+                                        />
+                                    <gauge:RadialRange
+                                        StartValue="0"
+                                        StartWidth="0.65"
+                                        Fill="#4D9b9b9b"
+                                        WidthUnit="Factor"
+                                        OffsetUnit="Factor"
+                                        RangeOffset="0.63"
+                                        EndWidth="0.15"
+                                        EndValue="99"
+                                        />
+                                </gauge:RadialAxis.Ranges>
+                                
+
+                                <gauge:RadialAxis.Pointers>
+                                    <gauge:NeedlePointer
+                                        x:Name="pointer"
+                                        KnobRadius="15"
+                                        KnobSizeUnit="Pixel"
+                                        NeedleEndWidth="15"
+                                        NeedleLength="0.6"
+                                        NeedleStartWidth="2"
+                                        Value="25"/>
+                                </gauge:RadialAxis.Pointers>
+                            </gauge:RadialAxis>
+                        </gauge:SfRadialGauge.Axes>
+                    </gauge:SfRadialGauge>
+                </VerticalStackLayout>
+            </Frame>
+            <!--#endregion-->
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
